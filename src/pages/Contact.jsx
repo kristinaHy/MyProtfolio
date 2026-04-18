@@ -24,9 +24,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { name: 'GitHub', url: '#', icon: '📚', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
-    { name: 'LinkedIn', url: '#', icon: '💼', color: 'hover:text-blue-600' },
-    { name: 'Email', url: 'mailto:your.email@example.com', icon: '📧', color: 'hover:text-red-600' }
+    { name: 'GitHub', url: 'https://github.com/kristinaHy', icon: '📚', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/kristinahyaunmikha/', icon: '💼', color: 'hover:text-blue-600' },
+    { name: 'Email', url: 'mailto:hyaunmikhakristina@gmail.com', icon: '📧', color: 'hover:text-red-600' }
   ];
 
   return (
@@ -54,7 +54,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 dark:text-white">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-300">your.email@example.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">hyaunmikhakristina@gmail.com</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center">
+                    <span className="text-xl">📞</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 dark:text-white">Phone</h3>
+                    <p className="text-gray-600 dark:text-gray-300">+977-9861695380</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -63,7 +72,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 dark:text-white">LinkedIn</h3>
-                    <p className="text-gray-600 dark:text-gray-300">linkedin.com/in/yourprofile</p>
+                    <p className="text-gray-600 dark:text-gray-300">linkedin.com/in/kristinahyaunmikha</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -72,7 +81,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 dark:text-white">Location</h3>
-                    <p className="text-gray-600 dark:text-gray-300">Your City, Country</p>
+                    <p className="text-gray-600 dark:text-gray-300">Changunarayan, Bhaktapur, Nepal</p>
                   </div>
                 </div>
               </div>
@@ -102,11 +111,11 @@ const Contact = () => {
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Quick Facts</h2>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">2+</div>
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">1+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Years Coding</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-600 dark:text-green-400">10+</div>
+                  <div className="text-2xl font-bold text-green-600 dark:text-green-400">6+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Projects Completed</div>
                 </div>
                 <div className="text-center">

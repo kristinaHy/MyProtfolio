@@ -10,15 +10,15 @@ const Home = () => {
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-6">
-              Hi, I'm <span className="text-blue-600 dark:text-blue-400">Your Name</span>
+              Hi, I'm <span className="text-blue-600 dark:text-blue-400">Kristina Hyaunmikha</span>
             </h1>
 
             <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-              Backend-focused developer using Django, currently learning React
+              Python Django Developer
             </h2>
 
             <p className="text-lg text-gray-700 dark:text-gray-200 mb-12 max-w-2xl mx-auto lg:mx-0">
-              I build robust backend systems using Django and REST APIs, and I'm currently expanding my skills into frontend development with React to create full-stack applications.
+              Passionate Python Django developer with experience in building robust backend systems and REST APIs. Currently expanding skills in frontend development with React to create full-stack applications.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -34,7 +34,7 @@ const Home = () => {
               </Link>
               <a
                 href="/resume.pdf"
-                download="YourName_Resume.pdf"
+                download="Kristina_Hyaunmikha_Resume.pdf"
                 className="w-full sm:w-auto"
               >
                 <Button variant="secondary" className="w-full sm:w-auto">
@@ -68,11 +68,11 @@ const Home = () => {
         {/* Stats section */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">3+</div>
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">6+</div>
             <div className="text-gray-600 dark:text-gray-300">Projects</div>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
-            <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">2+</div>
+            <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">1+</div>
             <div className="text-gray-600 dark:text-gray-300">Years Experience</div>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
@@ -80,8 +80,8 @@ const Home = () => {
             <div className="text-gray-600 dark:text-gray-300">Specialty</div>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
-            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">React</div>
-            <div className="text-gray-600 dark:text-gray-300">Learning</div>
+            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">Python</div>
+            <div className="text-gray-600 dark:text-gray-300">Expertise</div>
           </div>
         </div>
 
@@ -92,21 +92,21 @@ const Home = () => {
           </h2>
           <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 bg-blue-50 dark:bg-blue-900/20 hover:-translate-y-1 transition-transform">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">API-first apps</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Django Backend APIs</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Backend systems built with Django and DRF, designed to expose clean, secure REST APIs.
+                Robust backend systems built with Django, PostgreSQL, and REST APIs for scalable applications.
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 bg-green-50 dark:bg-green-900/20 hover:-translate-y-1 transition-transform">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Server-driven logic</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Full-Stack Web Apps</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Reliable data handling, authentication, and business logic implemented on the backend.
+                Complete web applications with Django backend, HTML/CSS frontend, and database integration.
               </p>
             </div>
             <div className="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 bg-purple-50 dark:bg-purple-900/20 hover:-translate-y-1 transition-transform">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">React-powered UI</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Learning React</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Simple React interfaces that consume Django APIs and keep the user experience clean.
+                Currently expanding frontend skills with React to create modern, interactive user interfaces.
               </p>
             </div>
           </div>

@@ -4,34 +4,64 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   const projects = [
     {
-      title: "Q&A Platform",
-      description: "A web-based Q&A platform built with Django and Django REST Framework. Users can post questions, answer them, and interact through a structured API.",
-      tech: ["Django", "DRF", "React (basic)"],
-      githubUrl: "#",
+      title: "URL Shortener Web Application",
+      description: "Developed a web application to convert long URLs into short links with automatic redirection. Used PostgreSQL for storing URL mappings and implemented backend logic for generating and managing short URLs.",
+      tech: ["Django", "PostgreSQL", "HTML", "CSS", "Git"],
+      githubUrl: "https://github.com/kristinaHy/URL_Shortner",
+      liveUrl: "#",
+      status: "Completed",
+      difficulty: "Intermediate",
+      icon: "🔗"
+    },
+    {
+      title: "SkillShareSpace",
+      description: "Built SkillShareSpace, a minimalist Django-based Q&A platform inspired by Stack Overflow for small communities. Implemented user authentication, content approval workflow, and flagging system for moderated interactions.",
+      tech: ["Django", "Python", "HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/kristinaHy/skillsharespace",
       liveUrl: "#",
       status: "Completed",
       difficulty: "Advanced",
       icon: "💬"
     },
     {
-      title: "Blog API App",
-      description: "A blog system with full CRUD functionality using Django REST Framework and a simple React frontend.",
-      tech: ["Django", "DRF", "React"],
-      githubUrl: "#",
+      title: "Job Portal",
+      description: "Designed and developed a job portal using Django and Python. Features include user authentication, CRUD operations, posting jobs, and applying for jobs.",
+      tech: ["Django", "Python", "HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/kristinaHy/job-portal",
       liveUrl: "#",
       status: "Completed",
       difficulty: "Intermediate",
-      icon: "📝"
+      icon: "💼"
     },
     {
-      title: "Task Manager",
-      description: "A simple task management app to practice React concepts like state, components, and API integration.",
-      tech: ["React", "Django API"],
-      githubUrl: "#",
+      title: "Personal Diary",
+      description: "Designed and developed a personal diary web application using Django and Python. Features user authentication, creating/editing/deleting diary entries, and organizing entries by date.",
+      tech: ["Django", "Python", "HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/kristinaHy/personal-diary",
       liveUrl: "#",
-      status: "In Progress",
+      status: "Completed",
       difficulty: "Beginner",
-      icon: "✅"
+      icon: "📓"
+    },
+    {
+      title: "Contact Book",
+      description: "Developed a Contact Book project to store, edit, and search contact details efficiently. Integrated API fetching to retrieve and update contact data dynamically.",
+      tech: ["Python", "Git", "GitHub"],
+      githubUrl: "https://github.com/kristinaHy/Contact-Book",
+      liveUrl: "#",
+      status: "Completed",
+      difficulty: "Beginner",
+      icon: "📱"
+    },
+    {
+      title: "3B Pest Control Backend APIs",
+      description: "Built backend APIs for 3B Pest Control using Django. Tested APIs thoroughly using Postman to ensure functionality, reliability, and correctness. Applied Git and GitHub for version control.",
+      tech: ["Django", "REST APIs", "Postman", "Git"],
+      githubUrl: "#",
+      liveUrl: "https://www.threebpest.com.au/",
+      status: "Completed",
+      difficulty: "Intermediate",
+      icon: "🐛"
     }
   ];
 

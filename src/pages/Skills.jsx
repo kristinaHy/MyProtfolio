@@ -1,21 +1,24 @@
 // Skills page component
 const Skills = () => {
   const backendSkills = [
-    { name: "Django", level: 90, icon: "🌀" },
-    { name: "Django REST Framework", level: 85, icon: "🔗" },
+    { name: "Python", level: 90, icon: "🐍" },
+    { name: "Django", level: 85, icon: "🌀" },
+    { name: "PostgreSQL", level: 80, icon: "🐘" },
     { name: "API Development", level: 88, icon: "🌐" }
   ];
 
   const frontendSkills = [
-    { name: "React", level: 45, icon: "⚛️", note: "Beginner - Actively Learning" },
     { name: "HTML", level: 80, icon: "🏗️" },
     { name: "CSS", level: 75, icon: "🎨" },
-    { name: "JavaScript", level: 70, icon: "📜" }
+    { name: "WordPress", level: 70, icon: "📝" },
+    { name: "React", level: 45, icon: "⚛️", note: "Beginner - Actively Learning" }
   ];
 
   const tools = [
     { name: "Git", level: 85, icon: "📚" },
-    { name: "Postman", level: 80, icon: "📮" }
+    { name: "GitHub", level: 85, icon: "🐙" },
+    { name: "VS Code", level: 80, icon: "💻" },
+    { name: "Linux", level: 75, icon: "🐧" }
   ];
 
   const SkillBar = ({ skill, showLevel = true }) => (
@@ -57,7 +60,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Backend Skills */}
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center gap-3 mb-6">
@@ -67,7 +70,7 @@ const Skills = () => {
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Backend</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              My core strength lies in building robust backend systems with Django and REST APIs.
+              My core strength lies in Python and Django for building robust backend systems and REST APIs.
             </p>
             <div className="space-y-4">
               {backendSkills.map((skill, index) => (
@@ -85,7 +88,7 @@ const Skills = () => {
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Frontend</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Currently expanding my frontend skills with React and modern web technologies.
+              Building responsive web interfaces with HTML, CSS, and WordPress, currently learning React.
             </p>
             <div className="space-y-4">
               {frontendSkills.map((skill, index) => (
@@ -103,12 +106,43 @@ const Skills = () => {
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Tools</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Essential development tools and technologies I use daily.
+              Development tools and technologies I use daily for efficient coding and collaboration.
             </p>
             <div className="space-y-4">
               {tools.map((skill, index) => (
                 <SkillBar key={index} skill={skill} />
               ))}
+            </div>
+          </div>
+
+          {/* Soft Skills */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900 rounded-lg flex items-center justify-center">
+                <span className="text-2xl">🤝</span>
+              </div>
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Soft Skills</h2>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Essential interpersonal and professional skills for effective collaboration.
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span className="text-gray-800 dark:text-gray-200">Strong Communication</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span className="text-gray-800 dark:text-gray-200">Leadership</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span className="text-gray-800 dark:text-gray-200">Teamwork</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span className="text-gray-800 dark:text-gray-200">Time Management</span>
+              </div>
             </div>
           </div>
         </div>
@@ -124,15 +158,15 @@ const Skills = () => {
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                  Advanced React patterns and hooks
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                  State management with Context API
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                  Modern CSS frameworks and animations
+                Advanced Django features and best practices
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                React development and modern frontend frameworks
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                UI/UX design principles
                 </li>
               </ul>
             </div>
@@ -141,15 +175,15 @@ const Skills = () => {
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  TypeScript integration
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  Advanced Django features
+                  Full-stack application development
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                   Cloud deployment and DevOps
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                  Advanced web development certifications
                 </li>
               </ul>
             </div>
