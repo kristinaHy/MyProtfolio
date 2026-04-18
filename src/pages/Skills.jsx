@@ -12,6 +12,8 @@ const Skills = () => {
     "CSS",
     "JavaScript"
   ];
+  
+  const frontendNote = "I am continuing to learn React and build interfaces that connect with backend APIs.";
 
   const tools = [
     "Git",
@@ -19,7 +21,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-gray-50 pt-20 fade-in">
       <div className="max-w-4xl mx-auto px-4 py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
           My Skills
@@ -29,7 +31,7 @@ const Skills = () => {
           {/* Backend Skills */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-xl font-bold text-gray-800 mb-4">Backend</h2>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-4">
               {backendSkills.map((skill, index) => (
                 <span
                   key={index}
@@ -39,12 +41,13 @@ const Skills = () => {
                 </span>
               ))}
             </div>
+            <p className="text-gray-600 text-sm">I focus on backend APIs, Django architecture, and clean data models.</p>
           </div>
 
           {/* Frontend Skills */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-xl font-bold text-gray-800 mb-4">Frontend</h2>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-4">
               {frontendSkills.map((skill, index) => (
                 <span
                   key={index}
@@ -54,12 +57,13 @@ const Skills = () => {
                 </span>
               ))}
             </div>
+            <p className="text-gray-600 text-sm">{frontendNote}</p>
           </div>
 
           {/* Tools */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-xl font-bold text-gray-800 mb-4">Tools</h2>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-4">
               {tools.map((tool, index) => (
                 <span
                   key={index}
@@ -69,6 +73,7 @@ const Skills = () => {
                 </span>
               ))}
             </div>
+            <p className="text-gray-600 text-sm">I use Git for version control and Postman for API testing.</p>
           </div>
         </div>
       </div>

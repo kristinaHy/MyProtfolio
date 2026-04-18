@@ -27,7 +27,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-gray-50 pt-20 fade-in">
       <div className="max-w-6xl mx-auto px-4 py-16">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
           My Projects

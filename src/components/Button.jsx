@@ -1,6 +1,6 @@
 // Reusable Button component
 // Props: children (button text), onClick, className (additional styles), variant (primary, secondary)
-const Button = ({ children, onClick, className = '', variant = 'primary' }) => {
+const Button = ({ children, onClick, type = 'button', className = '', variant = 'primary' }) => {
   // Base styles for all buttons
   const baseStyles = 'px-6 py-3 rounded-lg font-medium transition-colors duration-200 hover:shadow-md';
 
@@ -12,6 +12,7 @@ const Button = ({ children, onClick, className = '', variant = 'primary' }) => {
 
   return (
     <button
+      type={type}
       onClick={onClick}
       className={`${baseStyles} ${variants[variant]} ${className}`}
     >
