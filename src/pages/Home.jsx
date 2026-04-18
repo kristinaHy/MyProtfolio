@@ -32,6 +32,15 @@ const Home = () => {
                   Get In Touch
                 </Button>
               </Link>
+              <a
+                href="/resume.pdf"
+                download="YourName_Resume.pdf"
+                className="w-full sm:w-auto"
+              >
+                <Button variant="secondary" className="w-full sm:w-auto">
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -73,6 +82,33 @@ const Home = () => {
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
             <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">React</div>
             <div className="text-gray-600 dark:text-gray-300">Learning</div>
+          </div>
+        </div>
+
+        {/* New feature section */}
+        <div className="mt-16 bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl animate-slide-up">
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-white text-center mb-6">
+            What I Build
+          </h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 bg-blue-50 dark:bg-blue-900/20 hover:-translate-y-1 transition-transform">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">API-first apps</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Backend systems built with Django and DRF, designed to expose clean, secure REST APIs.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 bg-green-50 dark:bg-green-900/20 hover:-translate-y-1 transition-transform">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Server-driven logic</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Reliable data handling, authentication, and business logic implemented on the backend.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 bg-purple-50 dark:bg-purple-900/20 hover:-translate-y-1 transition-transform">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">React-powered UI</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Simple React interfaces that consume Django APIs and keep the user experience clean.
+              </p>
+            </div>
           </div>
         </div>
       </div>
