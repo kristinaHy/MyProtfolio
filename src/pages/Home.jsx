@@ -4,25 +4,77 @@ import Button from '../components/Button';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20 fade-in">
-      <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-          Your Name
-        </h1>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-20 fade-in">
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Text content */}
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-6">
+              Hi, I'm <span className="text-blue-600 dark:text-blue-400">Your Name</span>
+            </h1>
 
-        <h2 className="text-xl md:text-2xl text-gray-600 mb-8">
-          Backend-focused developer using Django, currently learning React
-        </h2>
+            <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+              Backend-focused developer using Django, currently learning React
+            </h2>
 
-        <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
-          I build backend systems using Django and REST APIs, and I am currently expanding into frontend development with React.
-        </p>
+            <p className="text-lg text-gray-700 dark:text-gray-200 mb-12 max-w-2xl mx-auto lg:mx-0">
+              I build robust backend systems using Django and REST APIs, and I'm currently expanding my skills into frontend development with React to create full-stack applications.
+            </p>
 
-        <Link to="/projects">
-          <Button variant="primary">
-            View My Projects
-          </Button>
-        </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link to="/projects">
+                <Button variant="primary" className="w-full sm:w-auto">
+                  View My Projects
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="secondary" className="w-full sm:w-auto">
+                  Get In Touch
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right side - Profile image placeholder */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-2xl">
+                <div className="w-60 h-60 md:w-72 md:h-72 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
+                  <svg className="w-32 h-32 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              {/* Floating elements for visual appeal */}
+              <div className="absolute -top-4 -right-4 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg animate-bounce-subtle">
+                <span className="text-2xl">🚀</span>
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-green-400 rounded-full flex items-center justify-center shadow-lg animate-bounce-subtle" style={{animationDelay: '1s'}}>
+                <span className="text-2xl">⚡</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Stats section */}
+        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">3+</div>
+            <div className="text-gray-600 dark:text-gray-300">Projects</div>
+          </div>
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+            <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">2+</div>
+            <div className="text-gray-600 dark:text-gray-300">Years Experience</div>
+          </div>
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">Django</div>
+            <div className="text-gray-600 dark:text-gray-300">Specialty</div>
+          </div>
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+            <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">React</div>
+            <div className="text-gray-600 dark:text-gray-300">Learning</div>
+          </div>
+        </div>
       </div>
     </div>
   );
