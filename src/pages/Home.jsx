@@ -44,15 +44,15 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right side - Profile image placeholder */}
+          {/* Right side - Profile image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-60 h-60 md:w-72 md:h-72 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
-                  <svg className="w-32 h-32 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
-                </div>
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D5603AQHq5VEKMn9Cuw/profile-displayphoto-scale_200_200/B56ZyukVEnHgAc-/0/1772455285794?e=1778112000&v=beta&t=FjWyX4klrc6oMy6G0Y9NiTTkv6BNj6XnZvvjXuwvLOw"
+                  alt="Kristina Hyaunmikha"
+                  className="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover"
+                />
               </div>
               {/* Floating elements for visual appeal */}
               <div className="absolute -top-4 -right-4 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg animate-bounce-subtle">
